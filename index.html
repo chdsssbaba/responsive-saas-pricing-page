@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaSify - Premium SaaS Pricing Plans</title>
+  <meta name="description" content="Flexible, transparent pricing plans for teams of all sizes. Choose between monthly and annual billing with instant discounts.">
+  
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="background-decorations" aria-hidden="true">
+    <div class="glow-sphere glow-sphere-1"></div>
+    <div class="glow-sphere glow-sphere-2"></div>
+    <div class="glow-sphere glow-sphere-3"></div>
+  </div>
+
+  <main>
+    <section class="pricing-section">
+      <header class="pricing-header">
+        <div class="brand-pill">
+          <span class="pulse-dot"></span>
+          Flexible Plans for Every Stage
+        </div>
+        <h1 class="pricing-title">Predictable Pricing,<br><span class="gradient-text">Unmatched Scale</span></h1>
+        <p class="pricing-subtitle">Choose the perfect plan for your team. Switch billing cycles anytime or save up to 20% with annual plans.</p>
+        
+        <!-- Billing Cycle Toggle Switch -->
+        <div class="billing-toggle">
+          <span class="toggle-label" id="label-monthly">Monthly Billing</span>
+          <label class="switch" aria-label="Toggle annual billing">
+            <input type="checkbox" id="billing-checkbox" aria-labelledby="label-annual">
+            <span class="slider"></span>
+          </label>
+          <span class="toggle-label" id="label-annual">
+            Annual Billing
+            <span class="discount-badge">Save 20%</span>
+          </span>
+        </div>
+      </header>
+
+      <!-- Pricing Cards Container -->
+      <div class="pricing-cards-container">
+        
+        <!-- Basic Tier Card -->
+        <article class="pricing-card" id="card-basic">
+          <div class="card-header">
+            <h3 class="card-title">Starter</h3>
+            <p class="card-description">Essential features for individuals and small side-projects getting started.</p>
+          </div>
+          
+          <div class="card-price" data-monthly="19" data-annual="15">
+            <span class="currency">$</span>
+            <span class="amount">19</span>
+            <span class="billing-cycle">/ month</span>
+          </div>
+
+          <p class="billing-note">Billed <span class="billing-period-text">monthly</span></p>
+
+          <ul class="feature-list">
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Up to 2 active projects</span>
+            </li>
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>5GB cloud storage</span>
+            </li>
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Basic analytics dashboard</span>
+            </li>
+            <li class="feature-item feature-item--unavailable">
+              <svg class="icon icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>Custom domain integration</span>
+            </li>
+            <li class="feature-item feature-item--unavailable">
+              <svg class="icon icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>24/7 Priority support</span>
+            </li>
+          </ul>
+
+          <button class="cta-button" type="button" aria-label="Start free trial with Starter plan">Get Started Free</button>
+        </article>
+
+        <!-- Pro Tier Card (Highlighted - Most Popular) -->
+        <article class="pricing-card pricing-card--popular" id="card-pro">
+          <div class="badge" id="popular-badge">Most Popular</div>
+          <div class="card-header">
+            <h3 class="card-title">Pro Tier</h3>
+            <p class="card-description">Comprehensive toolkit for growing businesses and professional teams.</p>
+          </div>
+
+          <div class="card-price" data-monthly="49" data-annual="39">
+            <span class="currency">$</span>
+            <span class="amount">49</span>
+            <span class="billing-cycle">/ month</span>
+          </div>
+
+          <p class="billing-note">Billed <span class="billing-period-text">monthly</span></p>
+
+          <ul class="feature-list">
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Unlimited active projects</span>
+            </li>
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>100GB cloud storage</span>
+            </li>
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Advanced AI predictive analytics</span>
+            </li>
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Custom domain integration</span>
+            </li>
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Priority email & chat support</span>
+            </li>
+          </ul>
+
+          <button class="cta-button cta-button--primary" type="button" aria-label="Start 14-day Pro plan trial">Start 14-Day Free Trial</button>
+        </article>
+
+        <!-- Enterprise Tier Card -->
+        <article class="pricing-card" id="card-enterprise">
+          <div class="card-header">
+            <h3 class="card-title">Enterprise</h3>
+            <p class="card-description">Dedicated infrastructure, security controls, and SLA guarantees for scale.</p>
+          </div>
+
+          <div class="card-price" data-monthly="99" data-annual="79">
+            <span class="currency">$</span>
+            <span class="amount">99</span>
+            <span class="billing-cycle">/ month</span>
+          </div>
+
+          <p class="billing-note">Billed <span class="billing-period-text">monthly</span></p>
+
+          <ul class="feature-list">
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Unlimited workspace seats</span>
+            </li>
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>1TB dedicated vault storage</span>
+            </li>
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Custom security & SSO (SAML/Okta)</span>
+            </li>
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Dedicated success account manager</span>
+            </li>
+            <li class="feature-item feature-item--available">
+              <svg class="icon icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>99.99% Uptime SLA agreement</span>
+            </li>
+          </ul>
+
+          <button class="cta-button" type="button" aria-label="Contact sales team for Enterprise plan">Contact Enterprise Sales</button>
+        </article>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
